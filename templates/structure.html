@@ -1,12 +1,27 @@
 <!DOCTYPE html lang='en'>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <title>About Us</title>
-</head>
-<body>
-    {% block body %}
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <title>The To Do List</title>
+    </head>
+
+    <body>
+        {% block title %}
+            
+        {% endblock title %}
         
-    {% endblock body %}
-</body>
+        <a href="/termsOfUse">Terms of Use</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/about">About</a>
+        <a href="/dashboard">Dashboard</a>
+
+        <hr>
+        <img src="/static/img/funny_avator.jpeg" alt="A funny avator">
+
+        {% block body %}
+            
+        {% endblock body %}
+    </body>
+
 </html>
